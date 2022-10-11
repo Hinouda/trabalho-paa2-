@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include<stdlib.h>
+
+typedef struct {
+    char cor[512];
+    int altura;
+    int raio;
+} espec_cilindros;
+
+
+int main()
+{
+    int numero_cilindros,i;
+
+    do{
+        scanf("%i",&numero_cilindros);
+
+        espec_cilindros cilindros[numero_cilindros];
+
+        for(i=0;i<numero_cilindros;i++)
+        {
+            scanf("%i %i %s ", &cilindros[i].altura,&cilindros[i].raio, cilindros[i].cor);
+        }
+
+    }while(numero_cilindros!=0);
+}
