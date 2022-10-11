@@ -9,6 +9,7 @@ typedef struct {
 } espec_cilindros;
 
 
+
 int main()
 {
     int numero_cilindros,i;
